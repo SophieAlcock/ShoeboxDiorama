@@ -15,7 +15,7 @@ ALL = [0, 1, 2]
 daysequence = Sequence() \
     .snap().led(ALL, 0) \
     .transition(0.5).led(0, 1) \
-    .transition(1).led(1, 1).led(0, 0) \ 
+    .transition(1).led(1, 1).led(0, 0) \
     .transition(0.5).led(1, 0) \
     .sleep(1) \
     .snap().led(ALL, 1) \
