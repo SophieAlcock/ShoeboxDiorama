@@ -22,7 +22,7 @@ daysequence = Sequence() \
     .transition(1.5).led(YELLOW, 0.3).led(BLUE, 0.5) \
     .transition(1.5).led(YELLOW, 0).led(BLUE, 1).led(WHITE, 1) \
     .sleep(2) \
-    .snap().led(ALL, 0)
+    .transition(1.5).led(BLUE, 0).led(WHITE, 0)
 
 # Run our Sequence
 daysequence.execute()
