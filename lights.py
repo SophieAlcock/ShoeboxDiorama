@@ -25,4 +25,4 @@ daysequence = Sequence() \
     .transition(1.5).led(BLUE, 0).led(WHITE, 0)
 
 # Run our Sequence
-daysequence.execute(10000)
+daysequence.execute(5)
