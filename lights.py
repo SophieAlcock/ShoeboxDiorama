@@ -10,14 +10,16 @@ except ImportError:
     # We will fall back to simulating the PCA9685
     pass
   
-ALL = [0, 1, 2]
+WHITE = 0
+BLUE = 1
+YELLOW = 2
+ALL = [WHITE, BLUE, YELLOW]
 
 daysequence = Sequence() \
     .snap().led(ALL, 0) \
-    .transition(0.5).led(0, 1) \
-    .transition(1).led(1, 1).led(0, 0) \
-    .transition(0.5).led(1, 0) \
-    .sleep(1) \
+    .transition(1).led(YELLOW, 1) \
+    .transition(1).led(YELLOW, 0.3).led(BLUE, 0.5) \
+    .transition(0.5).led(YELLOW, 0) . led(BLUE, 1) . led(WHITE, 1) \
     .snap().led(ALL, 1) \
     .sleep(0.2) \
     .snap().led(ALL, 0)
