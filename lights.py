@@ -18,6 +18,7 @@ ALL = [WHITE, BLUE, YELLOW]
 daysequence = Sequence() \
     .snap().led(ALL, 0) \
     .transition(1.5).led(YELLOW, 1) \
+    .sleep(2) \
     .transition(1.5).led(YELLOW, 0.3).led(BLUE, 0.5) \
     .transition(1.5).led(YELLOW, 0).led(BLUE, 1).led(WHITE, 1) \
     .sleep(2) \
