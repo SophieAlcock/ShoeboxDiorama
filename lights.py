@@ -19,7 +19,7 @@ daysequence = Sequence() \
     .snap().led(ALL, 0) \
     .transition(1).led(YELLOW, 1) \
     .transition(1).led(YELLOW, 0.3).led(BLUE, 0.5) \
-    .transition(0.5).led(YELLOW, 0) . led(BLUE, 1) . led(WHITE, 1) \
+    .transition(0.5).led(YELLOW, 0).led(BLUE, 1).led(WHITE, 1) \
     .snap().led(ALL, 1) \
     .sleep(0.2) \
     .snap().led(ALL, 0)
